@@ -18,7 +18,7 @@
 - #3d3d3d (Dash-unit and half-unit Section) 
 - #262626 (Footer) 
 - #fa1d2d (Red - Used in selectors, parragraphs, bars and other) 
-- #b2c831 (Green - Used in titles, badges, bars and other) 
+- #5dbcd2 (Green - Used in titles, badges, bars and other) 
 - #bdbdbd & #fff (Font colors)
 */
 
@@ -43,11 +43,11 @@ h2{
 
 h3 {
 	font-size:46px;
-	color:#b2c831
+	color:#5dbcd2
 }
 
 h5 {
-	color:#b2c831;
+	color:#5dbcd2;
 	margin-left:5px;
 }
 
@@ -65,10 +65,11 @@ h5 {
 }
 
 .dash-unit:hover {
-	background-color: #4f4f4f;
-	-moz-box-shadow:    3px 3px 2px 0px #151515;
-    -webkit-box-shadow: 3px 3px 2px 0px #151515;
-    box-shadow:         3px 3px 2px 0px #151515;
+	background-color: rgba(93, 188, 210,0.50);
+	-moz-box-shadow:    3px 3px 2px 0px #5dbcd2;
+    -webkit-box-shadow: 3px 3px 2px 0px #5dbcd2;
+    box-shadow:         3px 3px 2px 0px #5dbcd2;
+    transition: 0.3s;
 
 }
 
@@ -120,7 +121,7 @@ h5 {
 	font-size: 15px;
 	line-height: 2px;
 	letter-spacing: 0px;
-	color: #b2c831;
+	color: #5dbcd2;
 	padding-top:10px;
 	padding-left:5px;
 	margin-top:2px;
@@ -168,10 +169,11 @@ h5 {
 }
 
 .half-unit:hover {
-	background-color: #4f4f4f;
-	-moz-box-shadow:    3px 3px 2px 0px #151515;
-    -webkit-box-shadow: 3px 3px 2px 0px #151515;
-    box-shadow:         3px 3px 2px 0px #151515;
+	background-color: rgba(93, 188, 210,0.50);
+	-moz-box-shadow:    3px 3px 2px 0px #5dbcd2;
+    -webkit-box-shadow: 3px 3px 2px 0px #5dbcd2;
+    box-shadow:         3px 3px 2px 0px #5dbcd2;
+    transition: 0.3s;
 
 }
 
@@ -223,6 +225,33 @@ h5 {
 	vertical-align:middle;
 }
 
+#robot, #roboted, #judge, #banco, #doc {
+	padding: 44px 68px 50px 60px;
+	cursor: pointer;
+	display: block;	
+	max-width: 100%;
+	margin-right: 	auto;
+	margin-left: 	auto;
+	height: 	auto;
+	
+
+}
+
+#cheque, #transf {
+	width: 65px;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	cursor: pointer;
+	display: block;
+	max-width: 100%;
+}
+
+#robot:hover {
+	
+}
+
 /**********Styling Elements**********/   
 .cont {
 	text-align:center;
@@ -230,7 +259,7 @@ h5 {
 }
 
 .cont ok {
-	color:#b2c831;
+	color:#5dbcd2;
 }
 
 .cont bad {
@@ -247,7 +276,7 @@ h5 {
 .cont2 bold{
 	font-size:10px;
 	font-weight:bold;
-	color:#b2c831
+	color:#5dbcd2;
 }
 
 .text p {
@@ -286,7 +315,7 @@ h5 {
 input[type=submit] {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	background: #b2c831;
+	background: #5dbcd2;
 	color: #fff;
 	border: none;
 	padding: 8px 28px 10px 26px;
@@ -320,7 +349,7 @@ textarea {
 
 
 .progress-bar {
-	background-color: #b2c831;
+	background-color: #5dbcd2;
 }
 
 
@@ -332,7 +361,7 @@ textarea {
 .info-user {
 	text-align:center;
 	font-size: 24px;
-	color: #b2c831;
+	color: #5dbcd2;
 	}
 
 .fs1 {
@@ -365,8 +394,9 @@ digiclock {
 
 .clockcenter {
 	text-align:center;
+	font-size: 28px;
+    font-family: monospace;
 }
-
 
 /**********Mail Style Configuration**********/   
 
@@ -427,7 +457,7 @@ digiclock {
     background-color: #ddd;
 }
 .framemail .window .mail li .unread {
-    background: #b2c831;
+    background: #5dbcd2;
 }
 .framemail .window .mail li img {
     background: #819da2;
@@ -512,7 +542,7 @@ digiclock {
   position: relative;
   height: 130px;
   color: #fff;
-  background-image: linear-gradient(color-stops(#b2c831, #b2c831 50%, #b2c831 50%));
+  background-image: linear-gradient(color-stops(#5dbcd2, #5dbcd2 50%, #5dbcd2 50%));
   margin-bottom:20px;
 }
 .section-graph .graph-info {
@@ -577,7 +607,7 @@ digiclock {
   background-color: #fa1d2d;
 }
 .info-aapl li span.green {
-  background-color: #b2c831;
+  background-color: #5dbcd2;
 }
 
 /**********TWITTER WIDGET **********/
@@ -615,7 +645,7 @@ ul#jstwitter li a{
   *margin-left: .3em;
     font-size: 14px;
     line-height: 20px;
-    color: #b2c831;
+    color: #5dbcd2;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -699,12 +729,12 @@ ul#jstwitter li a{
   left: 2px;
   width: 58px;
   height: 22px;
-  background: #b2c831;
+  background: #5dbcd2;
   border-radius: 3px;
-  background-image: -webkit-linear-gradient(top, #b6c753, #b2c831);
-  background-image: -moz-linear-gradient(top, #b6c753, #b2c831);
-  background-image: -o-linear-gradient(top, #b6c753, #b2c831);
-  background-image: linear-gradient(to bottom, #b6c753, #b2c831);
+  background-image: -webkit-linear-gradient(top, #b6c753, #5dbcd2);
+  background-image: -moz-linear-gradient(top, #b6c753, #5dbcd2);
+  background-image: -o-linear-gradient(top, #b6c753, #5dbcd2);
+  background-image: linear-gradient(to bottom, #b6c753, #5dbcd2);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
   -webkit-transition: left 0.15s ease-out;
@@ -756,7 +786,7 @@ ul#jstwitter li a{
 
 /**********Link Styling**********/   
 a {
-  color: #b2c831;
+  color: #5dbcd2;
   text-decoration: none;
 }
 
@@ -808,7 +838,7 @@ a:hover {
 .external-event { /* try to mimick the look of a real event */
 	margin: 10px 0;
 	padding: 2px 4px;
-	background: #b2c831;
+	background: #5dbcd2;
 	color: #fff;
 	font-size: .85em;
 	cursor: pointer;
@@ -817,7 +847,7 @@ a:hover {
 #external-events p {
 	margin: 1.5em 0;
 	font-size: 11px;
-	color: #b2c831;
+	color: #5dbcd2;
 	}
 	
 #external-events p input {

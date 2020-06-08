@@ -26,6 +26,7 @@
 	<script type="text/javascript" src="js/noty/layouts/topLeft.js"></script>
 	<script type="text/javascript" src="js/noty/layouts/topRight.js"></script>
 	<script type="text/javascript" src="js/noty/layouts/topCenter.js"></script>
+  <script type="text/javascript" src="js/tile.js"></script>
 	
 	<!-- You can add more layouts if you want -->
 	<script type="text/javascript" src="js/noty/themes/default.js"></script>
@@ -119,10 +120,10 @@
 	      		<dtitle>Perfil de Usuário</dtitle>
 	      		<hr>
 				<div class="thumbnail">
-					<img src="images/face80x80.jpg" alt="Marcel Newman" class="img-circle">
+					<img src="images/face-man72x72.png" alt="Marcel Newman" class="img-circle">
 				</div><!-- /thumbnail -->
-				<h1>%Nome Usuário%</h1>
-				<h3>%Equipe%</h3>
+				<h1>Equipe Inove +</h1>
+				<h3>Bradesco CPI</h3>
 				<br>
 					<div class="info-user">
 						<span aria-hidden="true" class="li_user fs1"></span>
@@ -135,22 +136,25 @@
 
       <!-- DONUT CHART BLOCK -->
         <div class="col-sm-3 col-lg-3">
-      		<div class="dash-unit">
-		  		<dtitle>Robo Remetida</dtitle>
-		  		<hr>
-	        	<div id="load"></div>
-	        	<h2>45%</h2>
-			</div>
+      		<div class="dash-unit" onclick="window.location.href ='medias/MODELO%20LAYOUT%20PARA%20ROBO%20REMETIDAS.pdf';
+" onmouseover="Robot()" onmouseleave="RobotReset()">
+		  		  <dtitle>Robo Remetida</dtitle>
+		  		  <hr>
+            
+              <img id="robot" src="images/robotOff.png">
+
+			     </div>
         </div>
 
       <!-- DONUT CHART BLOCK -->
         <div class="col-sm-3 col-lg-3">
-      		<div class="dash-unit">
-		  		<dtitle>Robo TED (Crédito & Débito)</dtitle>
-		  		<hr>
-	        	<div id="space"></div>
-	        	<h2>65%</h2>
-			</div>
+      		<div class="dash-unit" onclick="window.location.href = 'medias/MODELO%20LAYOUT%20PLANILHAMENTO%20DE%20TED.pdf';" onmouseover="Roboted()" onmouseleave="RobotedReset()">
+		  		  <dtitle>Robo TED (Crédito & Débito)</dtitle>
+		  		  <hr>
+	        	
+	        	  <img id="roboted" src="images/smartOff.png">
+
+			     </div>
         </div>
         
         <div class="col-sm-3 col-lg-3">
@@ -160,7 +164,9 @@
 	      		<dtitle>Local Time</dtitle>
 	      		<hr>
 		      		<div class="clockcenter">
-			      		<digiclock>12:45:25</digiclock>
+                <div id="data-hora">
+			      		
+                </div>
 		      		</div>
 			</div>
 
@@ -169,13 +175,88 @@
 	      		<dtitle>Server Uptime</dtitle>
 	      		<hr>
 	      		<div class="cont">
-					<p><img src="images/up.png" alt=""> <bold>Up</bold> | 356ms.</p>
+					<p><img src="images/up.png" alt=""> <bold>Up</bold> | 358ms.</p>
 				</div>
 			</div>
 
         </div>
       </div><!-- /row -->   
  
+      <div class="row">
+
+          <div class="col-sm-3 col-lg-3">
+
+              <div class="dash-unit" onclick="#" onmouseover="Judge()" onmouseleave="JudgeReset()">
+                <dtitle>Robo Ajuizamento</dtitle>
+                <hr>
+                
+                  <img id="judge" src="images/leiOff.png">
+                
+              </div>
+
+          </div>
+
+          <div class="col-sm-3 col-lg-3">
+
+              <div class="dash-unit" onclick="#" onmouseover="Banco()" onmouseleave="BancoReset()">
+                <dtitle>Robo Lanbacen</dtitle>
+                <hr>
+                
+                  <img id="banco" src="images/bancoOff.png">
+                
+              </div>
+
+          </div>
+
+          <div class="col-sm-3 col-lg-3">
+
+              <div class="dash-unit" onclick="#" onmouseover="Doc()" onmouseleave="DocReset()">
+                <dtitle>Robo Doc</dtitle>
+                <hr>
+                
+                <img id="doc" src="images/docOff.png">
+
+              </div>
+
+          </div>
+
+          <div class="col-sm-3 col-lg-3">
+
+      <!-- LOCAL TIME BLOCK -->
+          <div class="half-unit" onclick="#" onmouseover="Cheque()" onmouseleave="ChequeReset()">
+            <dtitle>Robo Cheque Compensado</dtitle>
+            <hr>
+              <div class="cont">
+                <img id="cheque" src="images/chequeOff.png">
+              </div>
+      </div>
+
+      <!-- SERVER UPTIME -->
+      <div class="half-unit" onclick="window.location.href = 'medias/PLANILHAMENTO%20TRANSF%20CC%20e%20CP.pdf';" onmouseover="Transf()" onmouseleave="TransfReset()">
+            <dtitle>TRANSF CC & CP</dtitle>
+            <hr>
+              <div class="cont">
+                <img id="transf" src="images/transfOff.png">
+              </div>
+      </div>
+
+        </div>
+
+          <!--<div class="col-sm-3 col-lg-3">
+
+              <div class="dash-unit" onclick="#" onmouseover="Cheque()" onmouseleave="ChequeReset()">
+                <dtitle>Robo Cheque Compensado</dtitle>
+                <hr>
+                
+                <img id="cheque" src="images/chequeOff.png">
+
+              </div>
+
+          </div>
+        
+      </div> -->
+
+
 	  <!-- THIRD ROW OF BLOCKS -->     
       <div class="row">
     
@@ -223,7 +304,7 @@
 			<br>
 			<div class="text">
 			<p><strong> Dashboard created by Diego & Bruno.</strong></p>
-			<p>Criado para consulta de informações sobre layouts para documentos. O gerenciamento desse Dashboard é de total responsabilidade do Desenvolvedores da Inove+</p>
+			<p>Criado para consulta de informações sobre layouts para documentos. O gerenciamento desse Dashboard é de total responsabilidade dos Desenvolvedores da Inove+</p>
 			</div>
 
 			</div>
